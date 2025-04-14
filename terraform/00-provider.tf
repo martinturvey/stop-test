@@ -15,5 +15,5 @@ provider "aws" {
       Stack   = "stop-test"
     }
   }
-  region = "eu-west-2"
+  region = var.aws_region
 }
