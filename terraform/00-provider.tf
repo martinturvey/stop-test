@@ -11,7 +11,7 @@ terraform {
 provider "aws" {
   default_tags {
     tags = {
-      Project = "stop-test"
+      Project = var.project_tag
       Stack   = "stop-test"
     }
   }
