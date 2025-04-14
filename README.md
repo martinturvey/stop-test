@@ -18,8 +18,8 @@ An S3 backend has been defined. Please change `01-backend.tf` to an appropriate 
 ```
 cd terraform
 terraform init
-terraform plan
-terraform apply
+terraform plan -var-file=params/default.tfvars
+terraform apply -var-file=params/default.tfvars
 ```
 
 ## Components

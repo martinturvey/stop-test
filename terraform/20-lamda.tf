@@ -14,6 +14,6 @@ resource "aws_lambda_function" "test_lambda" {
 
   source_code_hash = data.archive_file.lambda.output_base64sha256
 
-  runtime = "python3.10"
-  timeout = 10
+  runtime = var.lambda_runtime
+  timeout = var.lambda_timeout
 }
