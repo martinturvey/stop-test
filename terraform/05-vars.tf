@@ -12,3 +12,8 @@ variable "lambda_timeout" {
   type    = number
   default = 30
 }
+
+variable "project_tag" {
+  type    = string
+  default = "stop-test"
+}
