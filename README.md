@@ -14,6 +14,10 @@ The Lambda checks for matching values of the 'Stop' tag in the region passed.
 
 ## Instructions
 
+There is a simple Github Actions defined to run a Terraform plan on push to `main`
+It has only been tested with credentials stored as repo secrets (removed following test & deactivated)
+Further development: set up OIDC to run using IAM role
+
 An S3 backend has been defined. Please change `01-backend.tf` to an appropriate target S3 bucket.
 ```
 cd terraform
